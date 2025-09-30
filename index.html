@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TasteSmoke — Поддержка</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>TasteSmoke — Поддержка</h1>
+    <nav>
+      <a href="./index.html" class="active">Поддержка</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./privacy.html">Политика конфиденциальности</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Как с нами связаться</h2>
+      <p>
+        По вопросам работы приложения, сообщить о проблеме или предложить идею —
+        напишите нам на email: <a href="mailto:d.ivanov@kodoev.ru">d.ivanov@kodoev.ru</a>.
+      </p>
+      <p>
+        Обычно мы отвечаем в течение 2–3 рабочих дней.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>О приложении</h2>
+      <p>
+        TasteSmoke — это сообщество любителей вкусовых композиций. Мы предоставляем
+        инструменты для ведения личной коллекции, обмена идеями и поиска
+        интересных сочетаний. Приложение не поощряет и не стимулирует употребление
+        каких-либо изделий. Контент носит информационно‑социальный характер.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Полезные ссылки</h2>
+      <ul>
+        <li><a href="./faq.html">Частые вопросы (FAQ)</a></li>
+        <li><a href="./privacy.html">Политика конфиденциальности</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> TasteSmoke</small>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

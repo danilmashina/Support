@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TasteSmoke — FAQ</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Частые вопросы (FAQ)</h1>
+    <nav>
+      <a href="./index.html">Поддержка</a>
+      <a href="./faq.html" class="active">FAQ</a>
+      <a href="./privacy.html">Политика конфиденциальности</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Как связаться с поддержкой?</h2>
+      <p>Напишите на <a href="mailto:d.ivanov@kodoev.ru">d.ivanov@kodoev.ru</a>. Обычно отвечаем в течение 2–3 рабочих дней.</p>
+    </section>
+
+    <section class="card">
+      <h2>Можно ли предложить новую функцию?</h2>
+      <p>Да, присылайте идеи на почту. Мы регулярно собираем обратную связь и планируем обновления.</p>
+    </section>
+
+    <section class="card">
+      <h2>Как удалить аккаунт и данные?</h2>
+      <p>Отправьте запрос на <a href="mailto:d.ivanov@kodoev.ru">d.ivanov@kodoev.ru</a>. Мы удалим данные в разумные сроки.</p>
+    </section>
+
+    <section class="card">
+      <h2>Приложение поощряет какие‑то изделия?</h2>
+      <p>Нет. Приложение ориентировано на сообщество и личные коллекции вкусов/композиций. Контент носит информационно‑социальный характер.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> TasteSmoke</small>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
