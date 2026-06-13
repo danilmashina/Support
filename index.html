@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taste — Поддержка</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page-type="support">
+  <header class="header">
+    <div class="header-inner">
+      <h1><span class="app-name-display">Taste</span> — Поддержка</h1>
+      <nav>
+        <a href="./index.html" class="active">Поддержка</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./privacy.html">Политика конфиденциальности</a>
+        
+        <div class="switcher-container">
+          <button class="switcher-btn active" data-target="taste">Taste</button>
+          <button class="switcher-btn" data-target="blat">Блат</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- TASTE CONTENT -->
+    <div data-app="taste">
+      <section class="card">
+        <h2>Как с нами связаться</h2>
+        <p>
+          По вопросам работы приложения, сообщить о проблеме или предложить идею —
+          напишите нам на email: <a href="mailto:d.ivanov@kodoev.ru" class="email-link">d.ivanov@kodoev.ru</a>.
+        </p>
+        <p>
+          Обычно мы отвечаем в течение 2–3 рабочих дней.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>О приложении</h2>
+        <p>
+          Taste — это сообщество любителей лимонадных вкусовых композиций. Мы предоставляем
+          инструменты для ведения личной коллекции, обмена идеями и поиска
+          интересных сочетаний.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Полезные ссылки</h2>
+        <ul class="links-list">
+          <li><a href="./faq.html">Частые вопросы (FAQ)</a></li>
+          <li><a href="./privacy.html">Политика конфиденциальности</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- BLAT CONTENT -->
+    <div data-app="blat">
+      <section class="card">
+        <h2>Как с нами связаться</h2>
+        <p>
+          По вопросам работы приложения Блат, сообщить о проблеме, ошибке в сделке или предложить идею —
+          напишите нам на email: <a href="mailto:d.ivanov@kodoev.ru" class="email-link">d.ivanov@kodoev.ru</a>.
+        </p>
+        <p>
+          Обычно служба поддержки отвечает в течение 2–3 рабочих дней.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>О приложении</h2>
+        <p>
+          Блат — это мобильное приложение для обмена предложениями, услугами и вещами за внутренние БК (Блат Коины). 
+          Мы разработали безопасную и удобную платформу: вы создаете предложения, договариваетесь в чате, 
+          а сделка защищается с помощью эскроу-счета до подтверждения получения товара или услуги обеими сторонами.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Полезные ссылки</h2>
+        <ul class="links-list">
+          <li><a href="./faq.html">Частые вопросы (FAQ)</a></li>
+          <li><a href="./privacy.html">Политика конфиденциальности</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> <span class="app-name-display">Taste</span></small>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
