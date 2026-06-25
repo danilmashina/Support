@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fallback to 'taste' to ensure existing links don't break
-  if (app !== 'taste' && app !== 'blat') {
+  if (app !== 'taste' && app !== 'blat' && app !== 'touch-recorder') {
     app = 'taste';
   }
 
@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Define app-specific display names and page-specific sub-titles
   const appNames = {
     taste: 'Taste',
-    blat: 'Блат'
+    blat: 'Блат',
+    'touch-recorder': 'Touch Recorder'
   };
 
   // 4. Update the page to reflect the selected app
@@ -35,8 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle body theme classes
     if (selectedApp === 'blat') {
       document.body.classList.add('theme-blat');
+      document.body.classList.remove('theme-touch-recorder');
+    } else if (selectedApp === 'touch-recorder') {
+      document.body.classList.remove('theme-blat');
+      document.body.classList.add('theme-touch-recorder');
     } else {
       document.body.classList.remove('theme-blat');
+      document.body.classList.remove('theme-touch-recorder');
     }
 
     // Toggle content visibility
@@ -102,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.switcher-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetApp = btn.getAttribute('data-target');
-      if (targetApp === 'taste' || targetApp === 'blat') {
+      if (targetApp === 'taste' || targetApp === 'blat' || targetApp === 'touch-recorder') {
         updateAppUI(targetApp);
       }
     });

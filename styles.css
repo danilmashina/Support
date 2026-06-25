@@ -19,6 +19,12 @@ body.theme-blat {
   --accent-rgb: 16, 185, 129;
 }
 
+body.theme-touch-recorder {
+  --accent-color: #8b5cf6;
+  --accent-hover: #a78bfa;
+  --accent-rgb: 139, 92, 246;
+}
+
 * {
   box-sizing: border-box;
 }
